@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Game Saya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <h1>Game Saya</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#games">Game</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Selamat Datang di Rell Sharing Game!</h2>
+      <p>Temukan game-game seru yang saya bagikan dan mainkan sekarang juga.</p>
+      <a href="#games" class="btn">Lihat Game</a>
+    </div>
+  </section>
+
+  <!-- Game List Section -->
+  <section id="games" class="game-list">
+    <h2>Daftar Game</h2>
+    <div class="games-container">
+      <div class="game-card">
+        <img src="images/game1.jpg" alt="Game 1">
+        <h3>Balatro (Paid)</h3>
+        <p>Balatro adalah campuran apik beberapa permainan kartu seperti Solitaire dan Poker, yang membolehkanmu melanggar aturan dengan cara yang tidak seperti biasanya!</p>
+        <a href="game1.html" class="btn">Download</a>
+      </div>
+      <div class="game-card">
+        <img src="images/game2.jpg" alt="Coming Soon">
+        <h3>Coming Soon</h3>
+        <p>Coming Soon.</p>
+        <a href="games/game2.html" class="btn">Download</a>
+      </div>
+      <!-- Tambahkan lebih banyak game card di sini -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Kontak</h2>
+    <p>Request game bisa request melalui kolom dibawah</p>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit" class="btn">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rell.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

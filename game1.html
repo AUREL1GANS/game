@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Game 1</title>
+  <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <h1>Game Saya</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Beranda</a></li>
+      <li><a href="index.html#games">Game</a></li>
+      <li><a href="index.html#about">Tentang</a></li>
+      <li><a href="index.html#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Download Section -->
+  <section class="download-section">
+    <h2>Download Balatro</h2>
+    <p>Silakan tunggu <span id="countdown">10</span> detik untuk mengunduh game.</p>
+    <div id="download-button" class="hidden">
+      <a href="games/balatro.zip" class="btn">Download Balatro</a>
+    </div>
+  </section>
+
+  <script>
+    // Timer countdown
+    let timeLeft = 10;
+    const countdownElement = document.getElementById('countdown');
+    const downloadButton = document.getElementById('download-button');
+
+    const countdown = setInterval(() => {
+      timeLeft--;
+      countdownElement.textContent = timeLeft;
+
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        countdownElement.style.display = 'none';
+        downloadButton.classList.remove('hidden');
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
